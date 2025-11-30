@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mila Ngewu – Software Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,12 +33,15 @@
     <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-2 border-primary-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex items-center">
+                <a href="#home"> 
+                     <div class="flex items-center" id ="home">
                     <div class="w-20 h-10 bg-primary-50 rounded-lg mr-3 flex items-center justify-center">
                         <img src="SVG_ MN.jpg" alt="Mila Ngewu logo" width="300" >
                     </div>
                     <h1 class="text-2xl font-bold text-primary-700">Mila Ngewu</h1>
                 </div>
+                </a>
+               
 
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
@@ -78,13 +83,13 @@
                         Building <span class="text-primary-500">Modern WebApps</span> with Impact
                     </h2>
                     <p class="text-xl md:text-2xl text-primary-600 mb-8">
-                        I create web and mobile applications using Flutter, Dotnet MVC, and modern technologies to deliver seamless digital experiences.
+                        I create web and mobile applications using HTML & CSS, Dotnet MVC, and modern technologies to deliver seamless digital experiences.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="tel:+27823655804" class="bg-primary-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-600 transition-colors shadow-lg">
                             📞 082 365 5804
                         </a>
-                        <a href="MilaNgewu_CV.pdf" class="bg-white text-primary-500 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-primary-500 hover:bg-primary-100 transition-colors shadow-lg">
+                        <a href="Mila_Ngewu_Web_Developer_CV.docx" class="bg-white text-primary-500 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-primary-500 hover:bg-primary-100 transition-colors shadow-lg">
                             📄 Download CV
                         </a>
                     </div>
@@ -209,6 +214,67 @@
     </div>
 </section>
 
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h3 class="text-4xl font-bold text-primary-700 mb-4">Projects</h3>
+            <p class="text-lg text-primary-600 max-w-2xl mx-auto">
+                Some of the applications and websites I’ve developed, showcasing my skills and attention to detail
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+         <a href="https://wiredsenpai.github.io/Kingfisher2/" target="_blank"> 
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                <img src="kingfishe.png" 
+                     alt="Portfolio website for a client" 
+                     class="w-full h-48 object-cover"
+                     onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                <div class="p-6">
+                    <h5 class="text-xl font-bold text-primary-700 mb-2">Kingfisher kitchens</h5>
+                    <p class="text-primary-600">Designed and developed a responsive website showcasing client work with modern design principles.</p>
+                </div>
+            </div>
+          </a>
+
+        
+
+            <!-- Project 2 -->
+            <a href="https://petalsflorist.co.za/" target="_blank">
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                <img src="wordpress.png" 
+                     alt="Dotnet MVC web application" 
+                     class="w-full h-48 object-cover"
+                     onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                <div class="p-6">
+                    <h5 class="text-xl font-bold text-primary-700 mb-2">WordPress Website Support</h5>
+                    <p class="text-primary-600">Providing full website maintenance,plugin management, performance optimization, 
+                        and resolving theme or layout issues to keep client websites running smoothly and securely.</p>
+                </div>
+            </div>
+
+            </a>
+           
+            <!-- Project 3 -->
+             <a href="https://wiredsenpai.github.io/iDesignSolutions/" target="_blank">
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                <img src="iDesign.png" 
+                     alt="Portfolio website for a client" 
+                     class="w-full h-48 object-cover"
+                     onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                <div class="p-6">
+                    <h5 class="text-xl font-bold text-primary-700 mb-2">iDesign Solutions</h5>
+                    <p class="text-primary-600">Designed and developed a responsive website showcasing client work with modern design principles.</p>
+                </div>
+            </div>            
+             </a>
+        </div>
+    </div>
+</section>
+
 <!-- Education & Experience Section -->
 <section id="education-experience" class="py-20 bg-primary-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -238,9 +304,9 @@
             <!-- Internship / Work Experience Card -->
             <div class="bg-white rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
                 <div class="text-4xl mb-4">💼</div>
-                <h5 class="text-xl font-bold text-primary-700 mb-3">Software Development Intern</h5>
-                <p class="text-primary-600">Your DIgital SA, 2022 - 2025</p>
-                <p class="text-primary-600">Developed webapps and wordpress applications, collaborated on team projects, and contributed to production-ready code.</p>
+                <h5 class="text-xl font-bold text-primary-700 mb-3">Junior Software Developer</h5>
+                <p class="text-primary-600">Your DIgital SA, 2022 - Present</p>
+                <p class="text-primary-600">Developing webApps and Wordpress applications,continuous collaboration on team projects, and contribution to production-ready code.</p>
             </div>
 
             <!-- Freelance / Projects Card -->
@@ -264,57 +330,6 @@
         </div>
     </div>
 </section>
-
-<!-- Projects Section -->
-<section id="projects" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h3 class="text-4xl font-bold text-primary-700 mb-4">Projects</h3>
-            <p class="text-lg text-primary-600 max-w-2xl mx-auto">
-                Some of the applications and websites I’ve developed, showcasing my skills and attention to detail
-            </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
-                <img src="kingfishe.png" 
-                     alt="Portfolio website for a client" 
-                     class="w-full h-48 object-cover"
-                     onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
-                <div class="p-6">
-                    <h5 class="text-xl font-bold text-primary-700 mb-2">Kingfisher kitchens</h5>
-                    <p class="text-primary-600">Designed and developed a responsive website showcasing client work with modern design principles.</p>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
-                <img src="project2_screenshot.jpg" 
-                     alt="Dotnet MVC web application" 
-                     class="w-full h-48 object-cover"
-                     onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
-                <div class="p-6">
-                    <h5 class="text-xl font-bold text-primary-700 mb-2">Dotnet MVC Web App</h5>
-                    <p class="text-primary-600">Dynamic web application with secure backend and intuitive user interface.</p>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
-                <img src="iDesign.png" 
-                     alt="Portfolio website for a client" 
-                     class="w-full h-48 object-cover"
-                     onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
-                <div class="p-6">
-                    <h5 class="text-xl font-bold text-primary-700 mb-2">iDesign Solutions</h5>
-                    <p class="text-primary-600">Designed and developed a responsive website showcasing client work with modern design principles.</p>
-                </div>
-            </div>            
-        </div>
-    </div>
-</section>
-
 <!-- Footer -->
 <footer id="contact" class="bg-primary-700 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -397,9 +412,27 @@
         card.style.transition = 'transform 0.6s ease, opacity 0.6s ease';
         observer.observe(card);
     });
+
+    document.querySelector('a[href="#home"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector('#home');
+    const navHeight = document.querySelector('nav').offsetHeight;
+
+    window.scrollTo({
+        top: target.offsetTop - navHeight,
+        behavior: 'smooth'
+    });
+});
+
 </script>
 
 
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/27823655804?text=Hi%20Mila,%20I'd%20like%20to%20connect!" 
+   target="_blank"
+   class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-3xl hover:scale-110 transition-transform">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 
 </body>
